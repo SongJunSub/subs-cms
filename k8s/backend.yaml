@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: subs-cms-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: subs-cms-backend
+  template:
+    metadata:
+      labels:
+        app: subs-cms-backend
+    spec:
+      containers:
+        - name: subs-cms-backend
+          image: subs-cms-backend:latest
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: subs-cms-backend
+spec:
+  selector:
+    app: subs-cms-backend
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+

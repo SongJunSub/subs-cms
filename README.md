@@ -1,0 +1,47 @@
+# subs-cms
+
+호스피탈리티 CMS 백엔드
+
+## 🛠️ 기술 스택
+- Java 17 (최신 LTS)
+- Spring Boot, Spring Cloud, JPA, QueryDSL
+- Spring Security, JWT
+- MySQL, Redis, Kafka
+- Gradle, Docker, Kubernetes
+
+## 📁 프로젝트 구조
+subs-cms/
+├── src/main/java/com/songjunsub/subscms
+│ └── ... (도메인별 패키지)
+├── src/main/resources
+│ └── application.properties
+├── build.gradle
+└── ...
+
+## 🚀 주요 기능(예정)
+- 객실/예약/고객 CRUD API
+- OTA 연동(Booking.com, Agoda 등)
+- 인증/인가(JWT, Spring Security)
+- Kafka 기반 이벤트 처리
+- Redis 캐시 활용
+- 마이크로서비스/클라우드 환경 대응
+
+## ⚙️ 개발 및 실행 방법
+```bash
+# 의존성 설치 및 빌드
+./gradlew build
+
+# 로컬 서버 실행
+./gradlew bootRun
+```
+
+## 🧑‍💻 기여 가이드
+- PR/이슈 등록 전 README, 코드 컨벤션 참고
+- 커밋 메시지: [타입] 메시지 (예: feat: 기능 추가)
+- 코드 리뷰 필수
+
+## 📝 라이선스
+MIT License
+
+---
+> 본 프로젝트는 호스피탈리티 산업의 생산성 향상과 자동화를 목표로 합니다.
